@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kryptonite.win</title>
+<meta name="description" content="[YOUR ONE-LINE DESCRIPTION]">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#14151a; --panel:#1e2027; --line:#2c2f38;
+  --text:#ece9ee; --muted:#a09ea9; --red:#d8102f;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--red);text-shadow:0 0 5px rgba(216,16,47,.85),0 0 14px rgba(216,16,47,.5);font:400 20px/1.6 'Pirata One','UnifrakturCook',Georgia,serif}
+a{color:inherit}
+:focus-visible{outline:3px solid #fff;outline-offset:3px}
+
+.bg{position:fixed;inset:0;z-index:0;display:grid;place-items:center;overflow:hidden;pointer-events:none;user-select:none;text-align:center;
+  font-size:clamp(48px,15vw,230px);line-height:1.05;letter-spacing:0;color:var(--red);opacity:.13;white-space:nowrap;text-shadow:0 0 40px rgba(216,16,47,.6)}
+header,main,footer{position:relative;z-index:1}
+header{display:flex;justify-content:space-between;align-items:center;max-width:1000px;margin:0 auto;padding:24px}
+header strong{font-family:'Pirata One','UnifrakturCook',Georgia,serif;font-weight:400;font-size:26px;letter-spacing:1px;color:var(--red);text-shadow:0 0 12px rgba(216,16,47,.7)}
+nav{display:flex;gap:24px}
+nav a{font-family:'Pirata One','UnifrakturCook',Georgia,serif;font-size:20px;letter-spacing:1px;text-decoration:none;color:var(--red)}
+nav a:hover{color:#ff3b5c}
+
+.hero{display:grid;place-items:center;text-align:center;padding:72px 24px 96px;
+  }
+.logo{margin:0;font-family:'Pirata One','UnifrakturCook',Georgia,serif;font-weight:400;line-height:1;color:var(--red);
+  text-shadow:0 0 4px var(--red),0 0 16px var(--red),0 0 38px rgba(216,16,47,.67),0 0 70px rgba(216,16,47,.4);
+  animation:flicker 1.4s steps(1,end) 1}
+.logo span{display:block;white-space:nowrap}
+.logo .a{font-size:clamp(40px,11vw,104px);letter-spacing:1px}
+.logo .b{font-size:clamp(64px,18vw,168px);letter-spacing:3px;line-height:1.05}
+.logo .b{margin-top:.2em}
+.logo .i{position:relative;display:inline-block;font-style:normal}
+.logo .crown{position:absolute;left:50%;top:-.1em;width:.34em;height:auto;transform:translateX(-50%) rotate(22deg);transform-origin:50% 90%;fill:var(--red);overflow:visible;filter:drop-shadow(0 0 3px var(--red)) drop-shadow(0 0 12px rgba(216,16,47,.8))}
+.logo .crown circle{fill:#ff5470}
+@keyframes flicker{0%{opacity:.15}8%{opacity:1}12%{opacity:.3}18%{opacity:1}24%{opacity:.6}30%,100%{opacity:1}}
+.hero p{max-width:34ch;margin:32px auto 0;font-size:20px;color:var(--muted)}
+.hero p.tagline{max-width:none;font-family:'Pirata One','UnifrakturCook',Georgia,serif;font-weight:400;font-size:clamp(30px,8vw,46px);letter-spacing:2px;color:var(--red);
+  text-shadow:0 0 4px var(--red),0 0 14px var(--red),0 0 32px rgba(216,16,47,.67)}
+.cta{font-family:'Pirata One','UnifrakturCook',Georgia,serif;font-size:22px;letter-spacing:1px;display:inline-block;margin-top:32px;position:relative;overflow:hidden;padding:14px 34px;color:var(--red);font-weight:500;text-decoration:none;border-radius:999px;background:linear-gradient(135deg,rgba(255,255,255,.2),rgba(216,16,47,.16) 50%,rgba(255,255,255,.07));-webkit-backdrop-filter:blur(14px) saturate(180%);backdrop-filter:blur(14px) saturate(180%);border:1px solid rgba(255,255,255,.3);box-shadow:inset 0 1px 1px rgba(255,255,255,.65),inset 0 -1px 2px rgba(255,255,255,.15),inset 0 0 16px rgba(216,16,47,.3),0 8px 26px rgba(216,16,47,.35);transition:transform .15s ease,background .15s ease,box-shadow .15s ease}
+.cta::after{content:'';position:absolute;left:8%;right:8%;top:2px;height:48%;border-radius:999px;background:linear-gradient(rgba(255,255,255,.38),rgba(255,255,255,0));pointer-events:none}
+.cta:hover{background:linear-gradient(135deg,rgba(255,255,255,.3),rgba(216,16,47,.28) 50%,rgba(255,255,255,.12));transform:translateY(-1px)}
+.cta:active{transform:scale(.97)}
+@media (prefers-reduced-motion:reduce){.cta{transition:none}header,main,footer,.bg>div,.cta{translate:none}}
+html,body{overflow-x:hidden}
+header,main,footer{translate:calc(var(--mx,0)*12px) calc(var(--my,0)*12px)}
+.bg>div{translate:calc(var(--mx,0)*26px) calc(var(--my,0)*26px)}
+.cta{translate:calc(var(--mx,0)*9px) calc(var(--my,0)*9px)}
+
+
+section{max-width:1000px;margin:0 auto;padding:72px 24px;border-top:1px solid var(--line)}
+h2{margin:0 0 20px;font-family:'Pirata One','UnifrakturCook',Georgia,serif;font-weight:400;font-size:38px;letter-spacing:1px}
+section p{max-width:60ch;margin:0;color:var(--red);font-size:22px}
+#discord p{margin-bottom:8px}
+#discord .cta{margin-top:20px}
+
+footer{font-family:'Pirata One','UnifrakturCook',Georgia,serif;font-size:18px;max-width:1000px;margin:0 auto;padding:32px 24px 48px;border-top:1px solid var(--line);color:var(--red);font-size:15px}
+
+@media (prefers-reduced-motion:reduce){.logo{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><div>ᴋʀʏᴘᴛᴏɴɪᴛᴇ<br>.ᴡɪɴ</div></div>
+<header>
+  <strong>kryptonite.win</strong>
+  <nav aria-label="Main">
+    <a href="#about">About</a>
+    <a href="#discord">Discord</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <div>
+      <h1 class="logo" aria-label="kryptonite.win"><span class="a">KRYPTONITE</span><span class="b">.W<i class="i">I<svg class="crown" viewBox="0 0 64 48" aria-hidden="true"><path d="M4 42V14l14 12L32 6l14 20 14-12v28z"/><rect x="4" y="36" width="56" height="6"/><circle cx="4" cy="11" r="3.5"/><circle cx="32" cy="3.5" r="3.5"/><circle cx="60" cy="11" r="3.5"/></svg></i>N</span></h1>
+      <p class="tagline">Kryptonite.win</p>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Kryptonite.win is an incoming script and lua (addon for HVH/Hacks vs Hacks) which is paid and is still in development.</p>
+  </section>
+
+  <section id="discord">
+    <h2>Discord</h2>
+    <p>Join the server for updates, release news and support. The invite opens in the Discord app if you have it installed.</p>
+    <a class="cta" href="https://discord.gg/amMcd6UtV" rel="noopener">Join the Discord</a>
+  </section>
+</main>
+
+<footer>kryptonite.win</footer>
+<script>
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var r=document.documentElement,tx=0,ty=0,cx=0,cy=0;
+  function aim(e){var t=e.touches&&e.touches[0]?e.touches[0]:e;tx=(t.clientX/innerWidth-.5)*2;ty=(t.clientY/innerHeight-.5)*2}
+  function rest(){tx=0;ty=0}
+  addEventListener('pointermove',aim,{passive:true});
+  addEventListener('touchstart',aim,{passive:true});
+  addEventListener('touchmove',aim,{passive:true});
+  addEventListener('touchend',rest);addEventListener('touchcancel',rest);
+  document.addEventListener('mouseleave',rest);
+  (function tick(){
+    cx+=(tx-cx)*.08;cy+=(ty-cy)*.08;
+    r.style.setProperty('--mx',cx.toFixed(3));r.style.setProperty('--my',cy.toFixed(3));
+    requestAnimationFrame(tick);
+  })();
+})();
+</script>
+</body>
+</html>
